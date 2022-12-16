@@ -105,9 +105,9 @@ namespace CopiedLobbyMess
                 ModifyConfig(workshop);
 
             if (Configuration.Instance.HideConfig)
-                SteamGameServer.SetKeyValue("Browser_Config_Count", "0");
+                SteamGameServer.SetKeyValue("Cfg_Count", "0");
             else
-                SteamGameServer.SetKeyValue("Browser_Config_Count", GetConfigurationCount().ToString());
+                SteamGameServer.SetKeyValue("Cfg_Count", GetConfigurationCount().ToString());
 
             ModifyPlugins();
         }
